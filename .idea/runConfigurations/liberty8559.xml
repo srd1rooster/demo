@@ -1,0 +1,72 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="liberty8559" type="WebSphereRunConfigurationType" factoryName="Local" APPLICATION_SERVER_NAME="WebSphere 8.5.5.9" ALTERNATIVE_JRE_ENABLED="false">
+    <option name="PORT" value="9080" />
+    <option name="UPDATING_POLICY" value="restart-server" />
+    <deployment />
+    <server-settings>
+      <option name="PROFILE_PATH" value="" />
+      <option name="SOAP_PORT" value="8880" />
+      <option name="CELL_NAME" value="" />
+      <option name="NODE_NAME" value="" />
+      <option name="SERVER_NAME" value="defaultServer" />
+      <option name="SECURED" value="false" />
+      <option name="CLIENT_TRUST_FILE_PATH" value="" />
+      <option name="CLIENT_TRUST_PASSWORD" value="WebAS" />
+      <option name="CLIENT_KEY_FILE_PATH" value="" />
+      <option name="CLIENT_KEY_PASSWORD" value="WebAS" />
+      <option name="USERNAME" value="" />
+      <option name="PASSWORD" value="" />
+    </server-settings>
+    <predefined_log_file id="WebSphere" enabled="true" />
+    <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="57386" />
+    </RunnerSettings>
+    <ConfigurationWrapper VM_VAR="JVM_ARGS" RunnerId="Cover">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <ConfigurationWrapper VM_VAR="JVM_ARGS" RunnerId="Debug">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <ConfigurationWrapper VM_VAR="JVM_ARGS" RunnerId="Run">
+      <option name="USE_ENV_VARIABLES" value="true" />
+      <STARTUP>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </STARTUP>
+      <SHUTDOWN>
+        <option name="USE_DEFAULT" value="true" />
+        <option name="SCRIPT" value="" />
+        <option name="VM_PARAMETERS" value="" />
+        <option name="PROGRAM_PARAMETERS" value="" />
+      </SHUTDOWN>
+    </ConfigurationWrapper>
+    <method />
+  </configuration>
+</component>

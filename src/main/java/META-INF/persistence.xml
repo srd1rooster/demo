@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+
+    <persistence-unit name="NewPersistenceUnit">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>com.srdone.domain.LoginEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:as400://10.40.0.62;libraries=MEMODEV;date format=iso;date seperator=: [developers on DEVELOPERS]"/>
+            <property name="hibernate.connection.driver_class" value="com.ibm.as400.access.AS400JDBCDriver"/>
+            <property name="hibernate.connection.username"/>
+            <property name="hibernate.connection.password"/>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
