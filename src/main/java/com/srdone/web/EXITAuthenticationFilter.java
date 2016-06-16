@@ -43,27 +43,27 @@ public class EXITAuthenticationFilter extends OncePerRequestFilter{
 //        WebApplicationContext wac = WebApplicationContextUtils.findWebApplicationContext(request.getServletContext());
 //        AuthenticationManager am = (AuthenticationManager) wac.getBean("srd1AM");
 
-        String uid = request.getParameter("uid");
-        String pwd = request.getParameter("pwd");
-//TODO this comes from http://shout.setfive.com/2015/11/02/spring-boot-authentication-with-custom-http-header/
-//        String xAuth = request.getHeader("X-Authorization");
+//        String uid = request.getParameter("uid");
+//        String pwd = request.getParameter("pwd");
+////TODO this comes from http://shout.setfive.com/2015/11/02/spring-boot-authentication-with-custom-http-header/
+////        String xAuth = request.getHeader("X-Authorization");
+////
+////        // validate the value in xAuth
+////        if(isValid(xAuth) == false){
+////            throw new SecurityException();
+////        }
+////
+////        // The token is 'valid' so magically get a user id from it
+////        Long id = getUserIdFromToken(xAuth);
 //
-//        // validate the value in xAuth
-//        if(isValid(xAuth) == false){
-//            throw new SecurityException();
-//        }
+//        // Create our Authentication and let Spring know about it
+////        List<GrantedAuthority> grantedAuths = new ArrayList<>();
+////        grantedAuths.add(new SimpleGrantedAuthority("ROLE_USER"));
+//        Authentication aToken = new UsernamePasswordAuthenticationToken( uid, pwd);
+//        am.authenticate(aToken);
+//        SecurityContextHolder.getContext().setAuthentication(aToken);
 //
-//        // The token is 'valid' so magically get a user id from it
-//        Long id = getUserIdFromToken(xAuth);
-
-        // Create our Authentication and let Spring know about it
-//        List<GrantedAuthority> grantedAuths = new ArrayList<>();
-//        grantedAuths.add(new SimpleGrantedAuthority("ROLE_USER"));
-        Authentication aToken = new UsernamePasswordAuthenticationToken( uid, pwd);
-        am.authenticate(aToken);
-        SecurityContextHolder.getContext().setAuthentication(aToken);
-
-        filterChain.doFilter(request, response);
+//        filterChain.doFilter(request, response);
     }
 
 }

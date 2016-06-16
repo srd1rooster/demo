@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
 
@@ -7,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="_csrf" content="${_csrf.token}"/>
 
-    <title>EXITize | Login templtate</title>
+    <title>EXITize | Login template</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -31,7 +32,7 @@
                 <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
             </p>
             <p>Login in. To see it in action.</p>
-            <form class="m-t" role="form" action="/api/login" method="post">
+            <form class="m-t" role="form" action="/api/signin" method="post">
                 <p th:if="${error}" th:text="${error}">No error</p>
                 <input type="hidden"  name="${_csrf.parameterName}"   value="${_csrf.token}"/>
                 <div class="form-group">

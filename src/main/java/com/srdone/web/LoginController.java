@@ -25,7 +25,7 @@ public class LoginController {
     @Qualifier("srd1sec")
     protected AuthenticationManager am;
 
-    @RequestMapping(value = "/api/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/api/signin", method = RequestMethod.POST)
     public String login(@RequestParam("UID") String uid
             , @RequestParam("PWD") String pwd
             , Model m){
@@ -37,9 +37,14 @@ public class LoginController {
 
         }catch(AuthenticationException e){
             m.addAttribute("error", e.getMessage());
-            return "login.html";
+            return "login";
         }
 
-        return "index.html";
+        return "index";
+    }
+
+    @RequestMapping(value = "/login")
+    public String login() {
+        return "login";
     }
 }

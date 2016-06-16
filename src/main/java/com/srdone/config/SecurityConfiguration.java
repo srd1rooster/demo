@@ -42,16 +42,16 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 
     @Override
     protected void configure(HttpSecurity https) throws Exception {
-        https.csrf().disable()
+        https//.csrf().disable()
             .authorizeRequests()
-////            .antMatchers("/static/**")
-////            .permitAll()
-//            .anyRequest()
-//            .authenticated()
+            .antMatchers("/css/**","/js/**","/fonts/**","/img/**","/font-awesome/**")
+            .permitAll()
+            .anyRequest()
+            .authenticated()
         .and()
 //            .addFilterBefore(new EXITAuthenticationFilter(), BasicAuthenticationFilter.class)
             .formLogin()
-            .loginPage("/login_orig.html")//.passwordParameter("pwd").usernameParameter("uid")
+            .loginPage("/login")
             .permitAll()
         .and()
             .sessionManagement()
